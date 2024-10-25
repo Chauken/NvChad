@@ -5,10 +5,11 @@ return {
     'MunifTanjim/nui.nvim',
     'rcarriga/nvim-notify',
   },
+  lazy = false,
+
   config = function()
     require('noice').setup {
       cmdline = {
-        enabled = true,
         view = 'cmdline_popup', -- use cmdline_popup for that nice UI
         opts = {
           border = {
