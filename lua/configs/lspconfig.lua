@@ -1,7 +1,7 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "csharp_ls" }
+local servers = { "html", "cssls", "python", "csharp_ls", "ruff_lsp" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- Set DOTNET_ROOT in the environment
