@@ -25,10 +25,10 @@ vim.keymap.set("i", "jj", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
 
-vim.keymap.set("n", "<M-h>", "<cmd>TmuxNavigateLeft<cr>", { desc = "Navigate window left" })
-vim.keymap.set("n", "<M-j>", "<cmd>TmuxNavigateDown<cr>", { desc = "Navigate window down" })
-vim.keymap.set("n", "<M-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "Navigate window up" })
-vim.keymap.set("n", "<M-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "Navigate window right" })
+vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { desc = "Navigate window left" })
+vim.keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>", { desc = "Navigate window down" })
+vim.keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "Navigate window up" })
+vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "Navigate window right" })
 -- vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
 
 -- vim.keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz')
