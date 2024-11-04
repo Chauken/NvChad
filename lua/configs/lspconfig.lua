@@ -1,11 +1,11 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "python", "csharp_ls", "ruff_lsp" }
+local servers = { "html", "cssls", "csharp_ls", "pyright" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
--- Set DOTNET_ROOT in the environment
-vim.fn.setenv("DOTNET_ROOT", "/usr/lib/dotnet")
+-- set dotnet_root in the environment
+vim.fn.setenv("dotnet_root", "/usr/lib/dotnet")
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -18,7 +18,7 @@ for _, lsp in ipairs(servers) do
       filetypes = { "cs", "csx" },
       root_dir = lspconfig.util.root_pattern("*.sln", "*.csproj", ".git"),
       cmd_env = {
-        DOTNET_ROOT = "/usr/lib/dotnet"
+        dotnet_root = "/usr/lib/dotnet"
       }
     }
   else

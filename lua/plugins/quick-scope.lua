@@ -1,14 +1,12 @@
 return {
   {
     'unblevable/quick-scope',
-    lazy = false,  -- Load on startup for immediate effect
+    lazy = false,
     init = function()
-      -- Remove the qs_highlight_on_keys setting to make it always show
-      vim.g.qs_enable = 1  -- Enable the plugin
-      -- Set primary and secondary colors for quick-scope
+      vim.g.qs_enable = 1
       vim.cmd [[
-        highlight QuickScopePrimary guifg='#ff0000' gui=underline ctermfg=Red cterm=underline
-        highlight QuickScopeSecondary guifg='#ff4444' gui=underline ctermfg=Red cterm=underline
+        highlight QuickScopePrimary guifg='#f9e2af' gui=bold,underline,nocombine guisp='#f9e2af' gui=undercurl ctermfg=Yellow cterm=bold,underline
+        highlight QuickScopeSecondary guifg='#f38ba8' gui=underline,nocombine guisp='#f38ba8' gui=undercurl ctermfg=Red cterm=underline
       ]]
     end,
   },

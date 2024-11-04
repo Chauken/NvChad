@@ -39,7 +39,6 @@ local M = {
                 fallback()
             end
         end, { "i", "s" }),
-        ["<A-y>"] = require('minuet').make_cmp_map(),
     }),
     formatting = {
         format = function(entry, vim_item)
