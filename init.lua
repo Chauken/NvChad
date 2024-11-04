@@ -33,7 +33,7 @@ require "mappings"
 require "options"
 require "nvchad.autocmds"
 require "configs.set"
-require "configs.remap"
 
 vim.schedule(function()
+  require "configs.remap"
 end)
