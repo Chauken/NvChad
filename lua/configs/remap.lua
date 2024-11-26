@@ -29,6 +29,7 @@ vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { desc = "Navigate win
 vim.keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>", { desc = "Navigate window down" })
 vim.keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "Navigate window up" })
 vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "Navigate window right" })
+
 -- vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
 
 -- vim.keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz')
@@ -45,10 +46,10 @@ vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "Navigate wi
 -- vim.keymap.set('n', '<M-k>', '<C-w>k', { desc = 'Move to top window' })
 -- vim.keymap.set('n', '<M-l>', '<C-w>l', { desc = 'Move to right window' })
 -- Window resizing with Alt + Arrow keys
-vim.keymap.set("n", "<M-Up>", ":resize +2<CR>", { desc = "Increase window height" })
-vim.keymap.set("n", "<M-Down>", ":resize -2<CR>", { desc = "Decrease window height" })
-vim.keymap.set("n", "<M-Left>", ":vertical resize -2<CR>", { desc = "Decrease window width" })
-vim.keymap.set("n", "<M-Right>", ":vertical resize +2<CR>", { desc = "Increase window width" })
+-- vim.keymap.set("n", "<M-Up>", ":resize +2<CR>", { desc = "Increase window height" })
+-- vim.keymap.set("n", "<M-Down>", ":resize -2<CR>", { desc = "Decrease window height" })
+-- vim.keymap.set("n", "<M-Left>", ":vertical resize -2<CR>", { desc = "Decrease window width" })
+-- vim.keymap.set("n", "<M-Right>", ":vertical resize +2<CR>", { desc = "Increase window width" })
 
 -- vim.keymap.set('n', '<leader><leader>', function()
 --   vim.cmd 'so'

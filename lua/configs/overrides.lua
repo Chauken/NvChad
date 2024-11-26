@@ -4,11 +4,12 @@ local M = {}
 M.nvimtree = {
   filters = {
     dotfiles = false,
-    exclude = { ".git" }
+    exclude = { ".git" },
   },
   
   git = {
     enable = true,
+    ignore = false,
   },
 
   renderer = {
@@ -69,12 +70,12 @@ M.nvimtree = {
 return M
 
 -- Then in lua/custom/plugins.lua
-{
-  "nvim-tree/nvim-tree.lua",
-  opts = function()
-    return require "custom.configs.overrides".nvimtree
-  end,
-  dependencies = {
-    "nvim-tree/nvim-web-devicons",
-  },
-}
+--   "nvim-tree/nvim-tree.lua",
+-- {
+--   opts = function()
+--     return require "custom.configs.overrides".nvimtree
+--   end,
+--   dependencies = {
+--     "nvim-tree/nvim-web-devicons",
+--   },
+-- }
